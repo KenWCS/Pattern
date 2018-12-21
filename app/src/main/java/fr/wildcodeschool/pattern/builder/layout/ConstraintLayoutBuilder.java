@@ -1,8 +1,10 @@
-package fr.wildcodeschool.pattern.builder;
+package fr.wildcodeschool.pattern.builder.layout;
 
 import android.content.Context;
 import android.support.constraint.ConstraintLayout;
 import android.view.View;
+
+import fr.wildcodeschool.pattern.builder.Builder;
 
 public class ConstraintLayoutBuilder implements Builder {
   private ConstraintLayout mLayout;

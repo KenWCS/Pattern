@@ -1,10 +1,12 @@
-package fr.wildcodeschool.pattern.builder;
+package fr.wildcodeschool.pattern.builder.layout;
 
 import android.content.Context;
 import android.view.View;
 import android.widget.LinearLayout;
 
-public class LinearLayoutBuilder implements Builder  {
+import fr.wildcodeschool.pattern.builder.Builder;
+
+public class LinearLayoutBuilder implements Builder {
   private LinearLayout mLayout;
 
   public LinearLayoutBuilder(Context ctx) {

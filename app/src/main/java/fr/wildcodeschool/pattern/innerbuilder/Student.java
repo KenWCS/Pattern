@@ -1,4 +1,4 @@
-package fr.wildcodeschool.pattern.staticbuild;
+package fr.wildcodeschool.pattern.innerbuilder;
 
 public class Student {
   private String firstname = "";

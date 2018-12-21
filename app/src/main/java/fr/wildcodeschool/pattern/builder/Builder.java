@@ -2,7 +2,7 @@ package fr.wildcodeschool.pattern.builder;
 
 import android.view.View;
 
-interface Builder {
+public interface Builder {
   void setMargin();
   void setAnchor();
 

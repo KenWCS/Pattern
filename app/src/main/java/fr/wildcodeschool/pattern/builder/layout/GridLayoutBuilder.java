@@ -1,10 +1,12 @@
-package fr.wildcodeschool.pattern.builder;
+package fr.wildcodeschool.pattern.builder.layout;
 
 import android.content.Context;
 import android.view.View;
 import android.widget.GridLayout;
 
-public class GridLayoutBuilder implements Builder{
+import fr.wildcodeschool.pattern.builder.Builder;
+
+public class GridLayoutBuilder implements Builder {
   private GridLayout mLayout;
 
   public GridLayoutBuilder(Context ctx) {

@@ -5,9 +5,13 @@ import android.content.Context;
 import java.util.HashMap;
 import java.util.List;
 
+import fr.wildcodeschool.pattern.builder.layout.ConstraintLayoutBuilder;
+import fr.wildcodeschool.pattern.builder.layout.GridLayoutBuilder;
+import fr.wildcodeschool.pattern.builder.layout.LinearLayoutBuilder;
+
 public class Inflater {
 
-  class LayoutDetail {
+  public static class LayoutDetail {
     private String layoutName = "";
     private HashMap<String, String> layoutDetail = new HashMap<>();
 
