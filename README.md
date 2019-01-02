@@ -15,7 +15,7 @@ Le Builder ou Monteur est une classe offrant des moyens de construction d'un obj
 
 Le problème d'une Fabrique de création, c'est qu'elle ne permet pas de définir comment un objet va être construit, certes, il est toujours possible de passer x paramètres dans la méthode de création d'une fabrique mais cela s'avère souvent très réducteurs voire délicat pour la maintenance.
 
-### **NestedBuilder ou InnerBuilder**
+### **NestedBuilder**
 Le NestedBuilder est une classe offrant la possibilité de définir comment un objet va être construit. Ce pattern évite la définition multiple de constructeur.
 
 ### **Singleton**

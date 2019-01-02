@@ -1,5 +1,6 @@
-package fr.wildcodeschool.pattern.innerbuilder;
+package fr.wildcodeschool.pattern.nestedbuilder;
 
+@SuppressWarnings("unused")
 public class Student {
   private String firstname = "";
   private String lastname = "";
