@@ -1,6 +1,6 @@
 package fr.wildcodeschool.pattern;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import fr.wildcodeschool.pattern.abstractfactory.AbstractFactory;
 import fr.wildcodeschool.pattern.abstractfactory.CPU;
 import fr.wildcodeschool.pattern.abstractfactory.GPU;
 import fr.wildcodeschool.pattern.builder.Inflater;
-import fr.wildcodeschool.pattern.innerbuilder.Student;
+import fr.wildcodeschool.pattern.nestedbuilder.Student;
 import fr.wildcodeschool.pattern.listener.AudioPlayer;
 import fr.wildcodeschool.pattern.listener.Listener;
 import fr.wildcodeschool.pattern.singleton.AudioManager;
@@ -19,6 +19,7 @@ import fr.wildcodeschool.pattern.singleton.AudioManager;
 import static fr.wildcodeschool.pattern.abstractfactory.AbstractFactory.Architecture.INTEL;
 import static fr.wildcodeschool.pattern.abstractfactory.AbstractFactory.Architecture.NVIDIA;
 
+@SuppressWarnings("unused")
 public class MainActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {

@@ -1,8 +1,8 @@
 package fr.wildcodeschool.pattern.builder.layout;
 
 import android.content.Context;
-import android.support.constraint.ConstraintLayout;
 import android.view.View;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import fr.wildcodeschool.pattern.builder.Builder;
 
