@@ -1,9 +1,9 @@
-package fr.wildcodeschool.pattern.listener;
+package fr.wildcodeschool.pattern.observer;
 
 import android.media.MediaPlayer;
 import android.util.Log;
 
-public class Listener implements AudioEventHandler {
+public class Listener implements AudioEventListener {
   // TAG
   private static final String TAG = "Listener";
   // Listener name

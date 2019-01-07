@@ -1,4 +1,4 @@
-package fr.wildcodeschool.pattern.listener;
+package fr.wildcodeschool.pattern.observer;
 
 import android.media.MediaPlayer;
 
@@ -6,16 +6,16 @@ import java.util.ArrayList;
 
 public class AudioPlayer {
   // Media player new instance
-  MediaPlayer player = new MediaPlayer();
+  private MediaPlayer player = new MediaPlayer();
 
   // Array with all the listener of event
-  ArrayList<AudioEventHandler> eventHandlerList = new ArrayList<>();
+  private ArrayList<AudioEventListener> eventHandlerList = new ArrayList<>();
 
   /**
    * Add a new listener in the list
-   * @param handler AudioEventHandler: new event client
+   * @param handler AudioEventListener: new event client
    */
-  public void addListener(AudioEventHandler handler) {
+  public void addListener(AudioEventListener handler) {
     if (!eventHandlerList.contains(handler)) {
       eventHandlerList.add(handler);
     }
@@ -23,9 +23,9 @@ public class AudioPlayer {
 
   /**
    * Remove a listener in the list
-   * @param handler AudioEventHandler: remove an event client
+   * @param handler AudioEventListener: remove an event client
    */
-  public void removeListener(AudioEventHandler handler) {
+  public void removeListener(AudioEventListener handler) {
     if (eventHandlerList.contains(handler)) {
       eventHandlerList.remove(handler);
     }
@@ -34,6 +34,7 @@ public class AudioPlayer {
   /**
    * Remove all the listeners of the list
    */
+  @SuppressWarnings("unused")
   public void removeAllListeners() {
     eventHandlerList.clear();
   }
@@ -57,7 +58,7 @@ public class AudioPlayer {
    * @param mp MediaPlayer: the MediaPlayer that is ready for playback
    */
   private void onPrepared(MediaPlayer mp) {
-    for (AudioEventHandler handler : eventHandlerList) {
+    for (AudioEventListener handler : eventHandlerList) {
       handler.onPrepared(mp);
     }
   }
@@ -67,7 +68,7 @@ public class AudioPlayer {
    * @param mp MediaPlayer: the MediaPlayer that reached the end of the file
    */
   private void onCompletion(MediaPlayer mp) {
-    for (AudioEventHandler handler : eventHandlerList) {
+    for (AudioEventListener handler : eventHandlerList) {
       handler.onCompletion(mp);
     }
   }

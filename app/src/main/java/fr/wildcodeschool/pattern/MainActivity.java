@@ -12,8 +12,8 @@ import fr.wildcodeschool.pattern.abstractfactory.CPU;
 import fr.wildcodeschool.pattern.abstractfactory.GPU;
 import fr.wildcodeschool.pattern.builder.Inflater;
 import fr.wildcodeschool.pattern.nestedbuilder.Student;
-import fr.wildcodeschool.pattern.listener.AudioPlayer;
-import fr.wildcodeschool.pattern.listener.Listener;
+import fr.wildcodeschool.pattern.observer.AudioPlayer;
+import fr.wildcodeschool.pattern.observer.Listener;
 import fr.wildcodeschool.pattern.singleton.AudioManager;
 
 import static fr.wildcodeschool.pattern.abstractfactory.AbstractFactory.Architecture.INTEL;
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     abstractFactoryExample();
     builderExample();
-    innerBuilderExample();
-    listenerExample();
+    nestedBuilderExample();
+    observerExample();
     singletonExample();
   }
 
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
   /**
    * innerBuilder pattern example
    */
-  private void innerBuilderExample() {
+  private void nestedBuilderExample() {
     Student lStudent = new Student.Builder()
       .setFirstname("Dupond")
       .setLastname("Eric")
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
   /**
    * Listener/Callback pattern example
    */
-  private void listenerExample() {
+  private void observerExample() {
     // Create 2 listeners
     Listener listener1 = new Listener("#1");
     Listener listener2 = new Listener("#2");

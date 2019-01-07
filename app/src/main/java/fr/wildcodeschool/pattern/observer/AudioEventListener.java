@@ -1,8 +1,8 @@
-package fr.wildcodeschool.pattern.listener;
+package fr.wildcodeschool.pattern.observer;
 
 import android.media.MediaPlayer;
 
-public interface AudioEventHandler {
+public interface AudioEventListener {
   void onPrepared(MediaPlayer mp);
   void onCompletion(MediaPlayer mp);
 }
