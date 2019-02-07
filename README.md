@@ -7,8 +7,8 @@ On se trouve en programmation objet souvent confronté au problème d'évolution
 Une fabrique de création (ou factory) est une classe qui n'a pour rôle que de construire des objets. Cette classe utilise des interfaces ou des classes abstraites pour masquer l'origine des objets.
 
 On distingue deux formes de fabrique :
-* Factory : Les fabriques abstraites reposant sur l'exploitation de classes génériques.
-* AbstractFactory: Les fabriques concrètes masquant toutes les méthodes nécéssaires à la création et à l'initialisation de l'objet.
+* Factory : Les fabriques concrètes masquant toutes les méthodes nécéssaires à la création et à l'initialisation de l'objet.
+* AbstractFactory: Les fabriques abstraites reposant sur l'exploitation de classes génériques.
 
 ### **Builder**
 Le Builder ou Monteur est une classe offrant des moyens de construction d'un objet. Par exemple, pour construire un dessin il faut ajouter des points, des lignes, des cercles.... Il ne doit pas être confondu avec la Fabrique.
